@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* En vez de height: 100vh */
+    background: linear-gradient(to right, #F3D1C8, #E06287);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
+}
+
+/* cuadro blanco */ 
+
+/* Tamaño normal (PC y pantallas grandes) */
+.invitacion {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Evita que el cuadro se agrande más de esto */
+    width: 100%;
+    border: 5px solid #D4A373;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Estilos para móviles */
+@media (max-width: 560px) {
+    .invitacion {
+        max-width: 340px; /* Reduce el tamaño en celulares */
+        padding: 30px; /* Ajusta el padding */
+    }
+}
+
+
+/* fin cuadro blanco */
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    color: #E06287;
+}
+
+h5 {
+     color: #8C7569;
+    margin: 15px 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-size: 18px;
+    color: #8C7569;
+    margin: 15px 0;
+}
+
+.boton:hover {
+    background: #c04d6d;
+}
+
+/* boton play */
+
+.play {
+    width: 100px;
+    height: 100px;
+    background-color: #E06287; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 30px solid #e6e2e2; 
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    position: relative;
+    left: 2px;
+}
+
+/* fin boton play */
+
+/*letra mis xv*/
+
+.xv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.xv h1, h2{
+    font-family: 'Playfair Display', serif;
+    color: #E06287;
+}
+
+.xv::before,
+.xv::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #D4A373, transparent, #D4A373); /* Efecto dorado */
+}
+
+.xv::before {
+    top: -15px; /* Espacio arriba */
+}
+
+.xv::after {
+    bottom: -15px; /* Espacio abajo */
+}
+
+/*fecha*/
+
+/* Contenedor de la fecha en una línea */
+.fecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilo para "Sábado" y "Mayo" con bordes arriba y abajo */
+.fecha p {
+    margin: 0;
+    color: #E06287;
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: normal;
+    padding: 10px 15px; /* Espaciado interno */
+    border-top: 3px solid #D4A373; /* Borde solo arriba */
+    border-bottom: 3px solid #D4A373; /* Borde solo abajo */
+}
+
+/* Estilo especial para el "03" más grande */
+.fecha .numero {
+    font-size: 60px; /* Tamaño grande */
+    font-weight: bold;
+    border: none; /* Sin bordes */
+    padding: 0; /* Sin padding extra */
+}
