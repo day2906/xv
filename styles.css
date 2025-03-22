@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* En vez de height: 100vh */
-    background: linear-gradient(to right, #fbb8a3, #eb8e72);
+    background: linear-gradient(to right, #fbb8a3, #f07f5d);
     font-family: 'Playfair Display', serif;
     text-align: center;
     gap: 20px;
