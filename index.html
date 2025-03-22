@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/Imagen1.png">
 
     <title>XV</title>
 </head>
 <body>
-    <div class="invitacion">
+    <div class="invitacion parte1-container">
+        <img src="/img/flores1.png" class="flores-parte1">
+        <img src="/img/flores1.png" class="flores-parte1-5">
+        <img src="/img/flores 2.png" class="flores-parte2">
+        <img src="/img/flores 2.png" class="flores-parte2-5">
         <h1>Valentina</h1> <br>
         <div class="carrusel">
             <div class="foto-container">
@@ -18,8 +23,6 @@
                 <img src="/img/img3.jpg" class="foto">
                 <img src="/img/img4.jpg" class="foto">
             </div>
-            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
-            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
         </div>
         <h5>Presione Play</h5>
         <div class="play" onclick="toggleAudio()">
@@ -44,7 +47,9 @@
         <div id="countdown" class="countdown-container"></div>
     </div>
 
-    <div class="invitacion">
+    <div class="invitacion parte1-container">
+        <img src="/img/flores3.png" class="flores-parte3">
+        <img src="/img/flores3.png" class="flores-parte3-5">
         <h1 style="font-size: 40px;">Con la bendición de Dios y de</h1><br>
         <h2 style="font-family: 'Dancing Script', cursive;">Mis padres:</h2>
         <p style="font-family: 'Dancing Script', cursive;">Luis Clavel Santiago</p>
@@ -54,12 +59,43 @@
         <p style="font-family: 'Dancing Script', cursive;">Heidi Garcia Huerta</p>
     </div>
 
-    <div class="invitacion">
-        <h1 style="font-size: 40px;">Ceremonia de accion de gracias a las 17:00 hrs.</h1>
-        <h1 style="font-size: 40px;">Recepción a las 18:00 hrs.</h1>
+    <div class="invitacion parte1-container">
+        <img src="/img/flores3.png" class="flores-parte4">
+        <img src="/img/flores3.png" class="flores-parte4-5">
+        <div class="cronograma">
+        <h1>Itinerario</h1>
+        <div class="linea-tiempo">
+            <div class="evento">
+                <div class="hora">17:00 hrs</div>
+                <div class="contenido">
+                    <h2>Ceremonia</h2>
+                    <p>Ceremonia de accion de gracias</p>
+                </div>
+            </div>
+            <div class="evento">
+                <div class="hora">18:00 hrs</div>
+                <div class="contenido">
+                    <h2>Recepción</h2>
+                    <p>La fiesta inicia en el Salón Jordán.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="invitacion parte1-container">
+        <img src="/img/flores 2.png" class="flores-parte5">
+        <img src="/img/flores 2.png" class="flores-parte5-5">
+        <h1>Ubicación</h1> <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.785830220538!2d-98.95281592478595!3d19.42165748185538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e395b97b72eb%3A0x18c9125f30d3b0f9!2sSal%C3%B3n%20de%20Eventos%20Jord%C3%A1n!5e0!3m2!1ses-419!2smx!4v1742605573946!5m2!1ses-419!2smx" 
-        width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="110%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br> <br>
+    </div>
+    
+    <div class="invitacion">
+        <h1>Confirmación de asistencia</h1>
+        <p style="font-size: 25px;">Esperamos que seas parte de esta gran celebración</p>
+        <br>
         <button onclick="enviarMensaje()">Confirma tu asistencia</button>
     </div>
     

@@ -254,21 +254,6 @@ p {
     opacity: 0;
 }
 
-/* 📍 Botones de navegación */
-.carrusel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.2s;
-}
-
 .carrusel .prev { left: -40px; }
 .carrusel .next { right: -40px; }
 
@@ -289,4 +274,149 @@ button {
     cursor: pointer;
     transition: background 0.3s ease;
     display: inline-block;
+}
+
+/*itinerario*/
+
+.linea-tiempo {
+    position: relative;
+    padding-left: 20px;
+}
+.linea-tiempo::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #E06287;
+    transform: translateX(-50%);
+}
+.evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+}
+.hora {
+    background: #E06287;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contenido {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+/*flores*/
+
+.parte1-container {
+    position: relative;
+}
+
+.flores-parte1 {
+    position: absolute;
+    top: -1%;  /* Ajusta la posición vertical */
+    right: 68%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(150deg) scaleX(-1); /* Rota la imagen 90° */
+    width: 130px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1;
+}
+
+.flores-parte1-5 {
+    position: absolute;
+    top: -1%;  /* Ajusta la posición vertical */
+    left: 68%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(-150deg); /* Rota la imagen 90° */
+    width: 130px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1;
+}
+
+.flores-parte2 {
+    position: absolute;
+    top: 65%;  /* Ajusta la posición vertical */
+    left: 65%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(-20deg); /* Rota la imagen 90° */
+    width: auto; /* Ajusta el tamaño */
+    height: 180px;
+    z-index: 1;
+}
+
+.flores-parte2-5 {
+    position: absolute;
+    top: 65%;  /* Ajusta la posición vertical */
+    right: 65%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(20deg) scaleX(-1); /* Rota la imagen 90° */
+    width: auto; /* Ajusta el tamaño */
+    height: 180px;
+    z-index: 1;
+}
+
+.flores-parte3 {
+    position: absolute;
+    top: 85%;  /* Ajusta la posición vertical */
+    right: 75%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(20deg) scaleX(-1); /* Rota la imagen 90° */
+    width: 100px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1;
+}
+
+.flores-parte3-5 {
+    position: absolute;
+    top: 85%;  /* Ajusta la posición vertical */
+    left: 75%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(20deg); /* Rota la imagen 90° */
+    width: 100px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1;
+}
+
+.flores-parte4 {
+    position: absolute;
+    top: 30%;  /* Ajusta la posición vertical */
+    right: 10%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(20deg); /* Rota la imagen 90° */
+    width: 50px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1;
+}
+
+.flores-parte4-5 {
+    position: absolute;
+    top: 85%;  /* Ajusta la posición vertical */
+    left: 16%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(20deg); /* Rota la imagen 90° */
+    width: 50px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1;
+}
+
+.flores-parte5 {
+    position: absolute;
+    top: 80%;  /* Ajusta la posición vertical */
+    right: -5%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(70deg); /* Rota la imagen 90° */
+    width: auto; /* Ajusta el tamaño */
+    height: 200px;
+    z-index: 1;
+}
+
+.flores-parte5-5 {
+    position: absolute;
+    top: 80%;  /* Ajusta la posición vertical */
+    left: -5%; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(-70deg) scaleX(-1); /* Rota la imagen 90° */
+    width: auto; /* Ajusta el tamaño */
+    height: 200px;
+    z-index: 1;
 }
