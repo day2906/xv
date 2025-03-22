@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* En vez de height: 100vh */
-    background: linear-gradient(to right, #F3D1C8, #E06287);
+    background: linear-gradient(to right, #fbb8a3, #eb8e72);
     font-family: 'Playfair Display', serif;
     text-align: center;
     gap: 20px;
@@ -27,7 +27,7 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     max-width: 600px; /* Evita que el cuadro se agrande más de esto */
     width: 100%;
-    border: 5px solid #D4A373;
+    border: 5px solid #F2C094;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -132,7 +132,6 @@ p {
 
 /*fecha*/
 
-/* Contenedor de la fecha en una línea */
 .fecha {
     display: flex;
     justify-content: center;
@@ -142,21 +141,152 @@ p {
     font-size: 20px;
 }
 
-/* Estilo para "Sábado" y "Mayo" con bordes arriba y abajo */
 .fecha p {
     margin: 0;
     color: #E06287;
     font-family: 'Averia Serif Libre', serif;
     font-weight: normal;
     padding: 10px 15px; /* Espaciado interno */
-    border-top: 3px solid #D4A373; /* Borde solo arriba */
-    border-bottom: 3px solid #D4A373; /* Borde solo abajo */
+    border-top: 3px solid #E28F73; /* Borde solo arriba */
+    border-bottom: 3px solid #E28F73; /* Borde solo abajo */
 }
 
-/* Estilo especial para el "03" más grande */
 .fecha .numero {
     font-size: 60px; /* Tamaño grande */
     font-weight: bold;
     border: none; /* Sin bordes */
     padding: 0; /* Sin padding extra */
+}
+
+/*contador*/
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Averia Serif Libre', serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-box {
+    background-color: #D4A373; /* Color dorado suave */
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #8C7569;
+}
+
+/* Carrusel */
+/* 🎠 Contenedor del carrusel */
+/* 🎠 Contenedor del carrusel (centrado dentro del cuadro) */
+.carrusel {
+    position: relative;
+    width: 280px;
+    height: 380px;
+    margin: 20px auto;
+    perspective: 1000px; /* Efecto de profundidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que las fotos salgan del cuadro */
+}
+
+/* 📸 Contenedor de fotos (para centrar las imágenes) */
+.foto-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🖼️ Estilo de cada foto */
+.foto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid #D4A373; /* Efecto de borde polaroid */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* 📸 Foto activa */
+.foto.activo {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* 🎭 Efecto de quitar foto */
+.foto.saliendo {
+    transform: translate(-50%, -70%) rotate(15deg) scale(0.8);
+    opacity: 0;
+}
+
+/* 🎭 Efecto de nueva foto */
+.foto.entrando {
+    transform: translate(-50%, 70%) rotate(-15deg) scale(1.2);
+    opacity: 0;
+}
+
+/* 📍 Botones de navegación */
+.carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.carrusel .prev { left: -40px; }
+.carrusel .next { right: -40px; }
+
+.carrusel button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #D4A373;
+    color: white;
+    font-family: 'Averia Serif Libre', serif;
+    padding: 12px 24px; /* Espaciado interno */
+    border: none;
+    border-radius: 30px; /* Hace que sea ovalado */
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
 }
