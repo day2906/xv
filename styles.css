@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* En vez de height: 100vh */
-    background: linear-gradient(to right, #fbb8a3, #f07f5d);
+    background: linear-gradient(to right, #f1dbd5, #d4a59a);
     font-family: 'Playfair Display', serif;
     text-align: center;
     gap: 20px;
@@ -27,7 +27,7 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     max-width: 600px; /* Evita que el cuadro se agrande más de esto */
     width: 100%;
-    border: 5px solid #F2C094;
+    border: 5px solid #d4a59a;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -46,29 +46,28 @@ body {
     }
 }
 
-
 /* fin cuadro blanco */
 
 h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 70px;
-    color: #E06287;
+    color: #8c5a5a;
 }
 
 h5 {
-     color: #8C7569;
+    color: #5a3c3c;
     margin: 15px 0;
     font-family: 'Dancing Script', cursive;
 }
 
 p {
     font-size: 18px;
-    color: #8C7569;
+    color: #5a3c3c;
     margin: 15px 0;
 }
 
 .boton:hover {
-    background: #c04d6d;
+    background: #8c5a5a;
 }
 
 /* boton play */
@@ -76,7 +75,7 @@ p {
 .play {
     width: 100px;
     height: 100px;
-    background-color: #E06287; 
+    background-color: #b97c72; 
     border-radius: 50%; 
     display: flex;
     justify-content: center;
@@ -95,6 +94,7 @@ p {
     position: relative;
     left: 2px;
 }
+
 
 /* fin boton play */
 
@@ -263,7 +263,7 @@ p {
 }
 
 button {
-    background-color: #D4A373;
+    background-color: #b97c72;
     color: white;
     font-family: 'Averia Serif Libre', serif;
     padding: 12px 24px; /* Espaciado interno */
