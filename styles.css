@@ -343,7 +343,7 @@ button {
 
 .flores-parte2 {
     position: absolute;
-    top: 65%;  /* Ajusta la posición vertical */
+    top: 70%;  /* Ajusta la posición vertical */
     left: 65%; /* Mueve la imagen fuera del borde derecho */
     transform: rotate(-20deg); /* Rota la imagen 90° */
     width: auto; /* Ajusta el tamaño */
@@ -353,7 +353,7 @@ button {
 
 .flores-parte2-5 {
     position: absolute;
-    top: 65%;  /* Ajusta la posición vertical */
+    top: 70%;  /* Ajusta la posición vertical */
     right: 65%; /* Mueve la imagen fuera del borde derecho */
     transform: rotate(20deg) scaleX(-1); /* Rota la imagen 90° */
     width: auto; /* Ajusta el tamaño */
